@@ -13,3 +13,9 @@ e fornire:
 ## Setup
 ```bash
 pip install -r requirements.txt
+mkdir -p data models
+python src/generate_dataset.py
+python src/train_eval.py
+streamlit run src/app.py
+
+
