@@ -19,6 +19,7 @@ python src/train_eval.py
 streamlit run src/app.py
 
 ## descrizione degli step eseguiti
+```bash
 Step 1 — struttura progetto
 "Inizializzazione struttura progetto MLTicket"
 Contiene:
