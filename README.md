@@ -123,11 +123,6 @@ pred_category, pred_priority
 
 ## per eseguirlo senza lanciare comando
 
-dasto destro su il file  `run_all.ps1` (Windows) nella root:
+dasto destro su il file  `run_all.ps1` (Windows) nella root del progetto e poi esegui con powershell
 
-```powershell
-.\.venv\Scripts\activate
-python src\generate_dataset.py
-python src\train_eval.py
-python -m streamlit run src\app.py
 
