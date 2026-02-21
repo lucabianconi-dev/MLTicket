@@ -95,18 +95,25 @@ Include:
 - pip
 
 ## Installazione
+
 ```bash
 python -m venv .venv
+
 # Windows:
 .\.venv\Scripts\activate
+
 # macOS/Linux:
-# source .venv/bin/activate
+source .venv/bin/activate
+
+## Dipendenze
+# essere nella roor di MLTicket
+
+```bash
+pip install -r requirements.txt
 
 ## Esecuzione (ordine corretto)
-
 ## Genera dataset sintetico:
 python src/generate_dataset.py
-
 
 ## Addestra e valuta i modelli (genera anche PNG e salva i modelli in /models):
 python src/train_eval.py
