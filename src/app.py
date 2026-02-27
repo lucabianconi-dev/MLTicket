@@ -164,10 +164,10 @@ st.divider()
 st.subheader("3) Grafici e report (output)")
 
 PLOT_FILES = [
-    ("Distribuzione categorie", "category_distribution.png"),
-    ("Distribuzione priorità", "priority_distribution.png"),
-    ("Confusion matrix categoria", "category_confusion_matrix.png"),
-    ("Confusion matrix priorità", "priority_confusion_matrix.png"),
+    ("Distribuzione categorie", "reports/category_distribution.png"),
+    ("Distribuzione priorità", "reports/priority_distribution.png"),
+    ("Confusion matrix categoria", "reports/category_confusion_matrix.png"),
+    ("Confusion matrix priorità", "reports/priority_confusion_matrix.png"),
 ]
 
 for title_plot, fname in PLOT_FILES:
@@ -179,3 +179,4 @@ for title_plot, fname in PLOT_FILES:
         #st.image(str(p), use_container_width=True) deprecata dal 31/12/2025 
     else:
         st.caption(f"File non trovato: {fname} (genera i grafici con lo script di training).")
+
