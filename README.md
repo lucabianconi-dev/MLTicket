@@ -1,7 +1,29 @@
+
 # MLTicket
 Repository that contain the project MLTichek for Pegaso PW by Bianconi Luca 0312301652
 # Triage automatico dei ticket con Machine Learning (Prototipo minimale)
 
+## Screenshot Installazione , avvio e dashboard operativa 
+
+<p align="center">
+ <img src="docs/images/1.png" width="200">
+ <img src="docs/images/2.png" width="200">
+ <img src="docs/images/3.png" width="200">
+ <img src="docs/images/4.png" width="200">
+</p>
+<br>
+<p align="center">
+ <img src="docs/images/5.png" width="200">
+ <img src="docs/images/6.png" width="200">
+ <img src="docs/images/7.png" width="200">
+</p>
+<br>
+<p align="center">
+ <img src="docs/images/category_distribution.png" width="200">
+ <img src="docs/images/priority_distribution.png" width="200">
+ <img src="docs/images/category_confusion_matrix.png" width="200">
+ <img src="docs/images/priority_confusion_matrix.png" width="200">
+</p>
 ## descrizione degli step eseguiti
 ```bash
 Step 1 — struttura progetto
