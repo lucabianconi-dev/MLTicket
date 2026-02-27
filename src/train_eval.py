@@ -47,7 +47,7 @@ def train_and_evaluate(csv_path="data/tickets_sintetici.csv"):
     disp.plot(values_format="d")
     plt.title("Confusion Matrix - Categoria")
     plt.tight_layout()
-    plt.savefig("category_confusion_matrix.png", dpi=150)
+    plt.savefig("reports/category_confusion_matrix.png", dpi=150)
     plt.close()
 
     # Modello priorità (etichette generate da regole, ma qui le “impariamo” per richiesta traccia)
@@ -70,27 +70,27 @@ def train_and_evaluate(csv_path="data/tickets_sintetici.csv"):
     disp2.plot(values_format="d")
     plt.title("Confusion Matrix - Priorità")
     plt.tight_layout()
-    plt.savefig("priority_confusion_matrix.png", dpi=150)
+    plt.savefig("reports/priority_confusion_matrix.png", dpi=150)
     plt.close()
 
     # Grafico semplice: conteggi classi (utile per report)
     df["category"].value_counts().plot(kind="bar")
     plt.title("Distribuzione classi - Categoria")
     plt.tight_layout()
-    plt.savefig("category_distribution.png", dpi=150)
+    plt.savefig("reports/category_distribution.png", dpi=150)
     plt.close()
 
     df["priority"].value_counts().plot(kind="bar")
     plt.title("Distribuzione classi - Priorità")
     plt.tight_layout()
-    plt.savefig("priority_distribution.png", dpi=150)
+    plt.savefig("reports/priority_distribution.png", dpi=150)
     plt.close()
 
     # Salvataggio modelli
     joblib.dump(cat_model, "models/category_model.joblib")
     joblib.dump(pri_model, "models/priority_model.joblib")
     print("\nSalvati: models/category_model.joblib e models/priority_model.joblib")
-    print("Grafici salvati: category_confusion_matrix.png, priority_confusion_matrix.png, category_distribution.png, priority_distribution.png")
+    print("Grafici salvati: reports/category_confusion_matrix.png, reports/priority_confusion_matrix.png, reports/category_distribution.png, reports/priority_distribution.png")
 
 def predict_batch(csv_in: str, csv_out: str):
     """
@@ -113,3 +113,4 @@ def predict_batch(csv_in: str, csv_out: str):
 
 if __name__ == "__main__":
     train_and_evaluate("data/tickets_sintetici.csv")
+
